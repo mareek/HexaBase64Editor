@@ -1,0 +1,23 @@
+﻿<Window x:Class="HexaBase64Editor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Width="1000"
+        SizeToContent="Height"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="3">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0">Hexadecimal :</Label>
+        <TextBox x:Name="HexaTextBox" Grid.Row="0" Grid.Column="1" TextChanged="HexaTextBox_TextChanged"/>
+
+        <Label Grid.Row="1" Grid.Column="0">Base64 :</Label>
+        <TextBox x:Name="Base64TextBox" Grid.Row="1" Grid.Column="1" TextChanged="Base64TextBox_TextChanged"/>
+    </Grid>
+</Window>
